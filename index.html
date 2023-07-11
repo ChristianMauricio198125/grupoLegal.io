@@ -1,146 +1,121 @@
 <!DOCTYPE html>
-<html lang="es">
-<head> 
-    <!--  metadatos -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Christian Mauricio Contreras Chacon">
-    <meta name="description" content="Abogados de Portoviejo">
-    <meta name="keywords" content="abogados,abogado,abogada,grupo legal,abogados ecuador,abogados portoviejo">
-    <!--  titulo -->
-    <title>Grupo Legal Portoviejo</title>
-    <!--  favicon -->
-    <!--  CSS  -->
-    <link rel="stylesheet" href="./estilos/style.css">
-    <!--  Bootstrap css -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grupo Legal Portoviejo</title>
+  <link rel="stylesheet" href="./estilos/style.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-    <!------------------menu ------------------->
-    <div class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <div class="container">
-            <a href="#" class="navbar-brand" ><span class="text-primary">Grupo</span>Legal</a>
-            <!------------------boton menu ------------------->
-            <button class="navbar-toggler" type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarNab"
-                aria-controls="navbarNab"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-            >
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            <!------------------ listado menu ------------------->
-            <div class="collapse navbar-collapse" id="navbarNab">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Nosotros</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Servicios</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Contacto</a>
-                    </li>
-                </ul>
-            </div>
-            
-        </div>
+  <!--------------------------- MENU HEADER ------------------------------>
+  <header>
+    <h2 class="logo">Grupo<span class="logo_palabra-color">Legal</span></h2>
+    <input type="checkbox" id="check">
+    <label for="check" class="mostrar_menu">&#8801</label>
+    <nav class="menu">
+      <a href="#">Home</a>
+      <a href="#personas">Nosotros</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#contacto">Contacto</a>
+      <label for="check" class="esconder_menu">&#215</label>
+    </nav>
+  </header>
+  <!--------------------------- SECCION BANNER ------------------------------>
+  <section id="banner">
+    <div class="contenido_banner">
+      <h3><span>Nuestro compromiso</span> es ud.</h3>
+      <a href="https://api.whatsapp.com/send?phone=00593962579902&text=Hola%20deso%20sus%20Servicios" class="boton_empezar">Contáctanos</a>
     </div>
-    <!------------------ slider carrusel ------------------->
-    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-        <!------  botones carrusel ------>
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <!------------------ imagenes carrusel ------------------->
-        <div class="carousel-inner">
-          <!------  imagen 1 carrusel ------>  
-          <div class="carousel-item active">
-            <img src="./imagenes/slider-1.jpeg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-sm-block">
-              <h5>El conocimiento es la base d ela verdad</h5>
-              <p>Some representative placeholder content for the first slide.</p>
-              <a href="#" class="btn btn-primary">Contáctanos</a>
-            </div>
-          </div>
-          <!------  imagen 2 carrusel ------>
-          <div class="carousel-item">
-            <img src="./imagenes/slider-2.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-sm-block">
-              <h5>Nuestro compromiso es ud.</h5>
-              <p>Some representative placeholder content for the second slide.</p>
-              <a href="#" class="btn btn-primary">Contáctanos</a>
-            </div>
-          </div>
-          <!------  imagen 3 carrusel ------>
-          <div class="carousel-item">
-            <img src="./imagenes/slider-3.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-sm-block">
-              <h5>Asesorate antes, ahorre contratiempos</h5>
-              <p>Some representative placeholder content for the third slide.</p>
-              <a href="#" class="btn btn-primary">Contáctanos</a>
-            </div>
-          </div>
-        </div>
-        <!------------------ botones prev-next carrusel ------------------->
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+  </section>
+  <!--------------------------- SECCION SERVICIOS ------------------------------>
+  <section id="servicios">
+    <div class="header_servicios">
+      <h4>Servicios</h4>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet, distinctio! Quos illo cum explicabo a odit at alias eveniet, magnam iste? Provident sint debitis error aut doloribus maxime saepe inventore beatae, animi enim, nostrum reprehenderit aliquam officia est aspernatur ratione autem blanditiis recusandae! Aperiam, culpa. Animi consequatur beatae est repellendus temporibus atque nesciunt necessitatibus, at totam cupiditate numquam quasi hic molestias illo debitis assumenda sequi aspernatur! Amet quos ullam sed reiciendis? Officiis eligendi quam tempora molestias inventore repellat, nihil asperiores eaque? Ipsam ratione mollitia labore ducimus officiis inventore, architecto qui, sequi, minus velit nam cum? Quibusdam eos voluptatibus rem veritatis.</p>
     </div>
-    <!------------------ seccion home ------------------->
-    <section class="home home_padding">
-        <div class="row">
-            <div class="col-g-4 col-md-12 col-12">
-                <div class="home_img">
-                    <img src="./imagenes/imagen_1_home.svg" alt="ilustracion abogado">
-                </div>
-            </div>
-            <div class="col-lg-8 col-md-12 col-12 ps-lg-5 mt-md-5">
-                <div class="home_text text-white">
-                    <h2>Nuestro compromiso es su bienestar</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus incidunt, tenetur blanditiis similique laborum cum quis eaque eum totam quos aut in error atque animi sed consequatur quibusdam magni doloribus?</p>
-                    <a href="#" class="btn btn-primary">Mas información</a>
-                </div>
-
-            </div>
-        </div>
-    </section>
-    <!------------------ seccion servicios ------------------->
-    <div class="servicios section-padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="section-header text-center text-white pb-5">
-                        <h2>Nuestros servicios</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, aut? Laboriosam, nisi ipsa tenetur mollitia in excepturi suscipit cumque! Eos ea, nihil, quam eveniet asperiores nam optio perferendis, doloribus dolorum repellendus laudantium totam beatae sequi fugiat voluptatibus a vitae nesciunt.</p>
-
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col col-md-12 col-lg-4">
-                    
-                </div>
-            </div>
-        </div>
-
+    <div class="content_servicios_card">
+      <div class="card_servicios">
+        <h4><i class='bx bx-male-female' ></i>Familia</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos deserunt, sit accusamus architecto ab distinctio totam fuga, delectus eveniet molestiae consequatur quo aperiam sequi quis omnis necessitatibus mollitia exercitationem molestias.</p>
+      </div>
+      <div class="card_servicios">
+        <h4><i class='bx bx-street-view' ></i>Civil</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos deserunt, sit accusamus architecto ab distinctio totam fuga, delectus eveniet molestiae consequatur quo aperiam sequi quis omnis necessitatibus mollitia exercitationem molestias.</p>
+      </div>
+      <div class="card_servicios">
+        <h4><i class='bx bxs-business' ></i>Laboral</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos deserunt, sit accusamus architecto ab distinctio totam fuga, delectus eveniet molestiae consequatur quo aperiam sequi quis omnis necessitatibus mollitia exercitationem molestias.</p>
+      </div>
+      <div class="card_servicios">
+        <h4><i class='bx bxs-landmark' ></i>Penal</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos deserunt, sit accusamus architecto ab distinctio totam fuga, delectus eveniet molestiae consequatur quo aperiam sequi quis omnis necessitatibus mollitia exercitationem molestias.</p>
+      </div>
+      <div class="card_servicios">
+        <h4><i class='bx bx-user' ></i>Administrativo</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos deserunt, sit accusamus architecto ab distinctio totam fuga, delectus eveniet molestiae consequatur quo aperiam sequi quis omnis necessitatibus mollitia exercitationem molestias.</p>
+      </div>
+      <div class="card_servicios">
+        <h4><i class='bx bx-objects-vertic  al-bottom' ></i>Societario</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos deserunt, sit accusamus architecto ab distinctio totam fuga, delectus eveniet molestiae consequatur quo aperiam sequi quis omnis necessitatibus mollitia exercitationem molestias.</p>
+      </div>
     </div>
-    
+  </section>
+  <!--------------------------- SECCION QUIENES SOMOS ------------------------------>
+  <section id="personas">
+    <div>
+      <img src="./imagenes/adiela_400.png" alt="imagen abogada adiela" width="400px" height="400px">
+      <h4>Lorem ipsum dolor sit amet.</h4>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, accusantium?</p>
+      <a href="#" class="boton_saber_mas">Saber mas...</a>
+    </div>
+    <div>
+      <img src="./imagenes/yordana_400.png" alt="imagen abogada adiela" >
+      <h4>Lorem ipsum dolor sit amet.</h4>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, accusantium?</p>
+      <a href="#" class="boton_saber_mas">Saber mas...</a>
+    </div>
+    <div>
+      <img src="./imagenes/amigo_400.png" alt="imagen abogada adiela">
+      <h4>Lorem ipsum dolor sit amet.</h4>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, accusantium?</p>
+      <a href="#" class="boton_saber_mas">Saber mas...</a>
+    </div>
+  </section>
+  <!--------------------------- SECCION FORMULARIO ------------------------------>
+  <section id="contacto">
+    <h4>Contacta con nosotros</h4>
+    <form action="#" method="get">
+      <div class="datos_form">
+        <!----- nombre ------>
+        <div class="nombre">
+          <label for="nombre">Nombre :</label>
+          <input type="text" name="nombre" id="nombre" placeholder="Ingrese nombre completo">
+        </div>
+        <!----- email ------>
+        <div class="email">
+          <label for="email">Email :</label>
+          <input type="email" name="email" id="email" placeholder="Ingrese su correo">
+        </div>
+      </div>
+        <!----- mensaje ------>
+        <div class="mensaje">
+          <label for="mensaje">Mensaje :</label>
+          <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Ingrese su mensaje "></textarea>
+        </div>
+        <div class="boton_formulario">
+          <a href="#">Enviar</a>
+        </div>
+    </form>
+  </section>
+  <footer>
+    <p>&copy;2023 Dev. Contreras web</p>
+    <a href=""><i class='bx bxl-facebook' ></i></a>
+    <a href=""><i class='bx bxl-twitter' ></i></a>
+    <a href="https://api.whatsapp.com/send?phone=00593962579902&text=Hola%20deso%20sus%20Servicios"><i class='bx bxl-whatsapp' ></i></a>
+    <a href="https://instagram.com/grupolegalportoviejo?igshid=NTc4MTIwNjQ2YQ=="><i class='bx bxl-instagram' ></i></a>
+    <a href=""><i class='bx bxl-blogger' ></i></a>
+  </footer>
   
-    
-    <!--  Bootstrap script -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
 </html>
