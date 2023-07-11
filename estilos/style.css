@@ -261,14 +261,17 @@ form input:focus, form textarea:focus {
     background-color:rgb(19, 102, 30);
     border: none;
 }
-/* --------------------- SECCION FORMULARIO -------------------------------------  */
+/* --------------------- FOOTER -------------------------------------  */
 footer {
-    padding: 20px;
-    font-size: 15px;
-    font-weight: 400;
-    color: white;
     background-color: #303031;
     padding-bottom: 40px;
+    color: white;
+    
+}
+footer .redes{
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: 400;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -279,6 +282,10 @@ footer a {
 footer a i {
     font-size: 25px;
     color: white;
+}
+footer p {
+    width: 100%;
+    text-align: center;
 }
 
 
@@ -319,19 +326,43 @@ footer a i {
     #check:checked ~ .menu {
         right: 0;
     }
+    .boton_empezar {
+        padding: 10px 20px;
+        margin-top: 5px;
+    }
     /* ---------- SECCION PERSONAS ----------  */
     #personas {
         flex-direction: column;
         align-items: center;
-        flex-wrap: wrap;
+          
+    }
+    #personas div {
+        padding: 25px 0px;
+    }
+    #personas img {
+        width: 300px;
+        height: 300px;
+    }
+    /* ---------- SECCION SERVICIOS ----------  */
+    #servicios {
+        padding: 20px 0px;
+    }
+    .content_servicios_card {
+        padding: 20px 0px;
     }
     /* ---------- SECCION FORMULARIO ----------  */
     .datos_form {
         flex-direction: column;
     }
-
-
+    /* ---------- FOOTER ----------  */
+    footer .redes{
+        display: flex;
+    }
+    footer p {
+        display: block;
+    }
 }
+
 
 
 
