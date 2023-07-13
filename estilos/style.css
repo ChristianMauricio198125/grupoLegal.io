@@ -77,7 +77,7 @@ header {
     flex-direction: column;
    justify-content: center;
    align-items: center;
-   padding-top: 100px;
+   padding-top: 70px;
 }
 .contenido_banner h3{
     font-size: 30px;
@@ -118,6 +118,32 @@ h3 {
 #personas div p {
     color: #4d4d5c87;
 }
+details > summary {
+    padding: 10px 20px;
+    margin: auto;
+    margin-top: 10px;
+    width: 200px;
+    border-radius: 20px;
+    border: 1px solid rgb(49, 163, 64);
+    box-shadow: 1px 1px 2px #bbbbbb;
+    cursor: pointer;
+    color: rgb(49, 163, 64);
+  }
+  details > ul {
+    display: block;
+    padding: 10px;
+    background-color: rgb(130, 233, 144);
+    margin: 10px;
+    border-radius: 5px;
+    color: #4d4d5c;
+    list-style-type: none;
+  }
+  details > ul > li {
+    line-height: 1.5;
+    padding: 5px;
+    padding-bottom: 10px;
+    text-align: justify;
+  }
 .boton_saber_mas {
     display: inline-block;
     text-decoration: none;
@@ -169,7 +195,7 @@ h3 {
 }
 .card_servicios {
     width: 500px;
-    height: 600px;
+    height: 300px;
     background-color: white;
     margin: 50px;
     border-radius: 10px;
@@ -261,6 +287,23 @@ form input:focus, form textarea:focus {
     background-color:rgb(19, 102, 30);
     border: none;
 }
+form button {
+    display: block;
+    padding: 10px;
+    margin: auto;
+    background-color: rgb(49, 163, 64);
+    border-radius: 10px;
+    width: 100%;
+    color: white;
+    cursor: pointer;
+    border: 1px solid rgb(115, 187, 125);
+    font-size: 1.5rem;
+    
+}
+form button:hover {
+    background-color:rgb(19, 102, 30);
+    border: none;
+}
 /* --------------------- FOOTER -------------------------------------  */
 footer {
     background-color: #303031;
@@ -349,6 +392,9 @@ footer p {
     }
     .content_servicios_card {
         padding: 20px 0px;
+    }
+    .card_servicios {
+        height: auto;
     }
     /* ---------- SECCION FORMULARIO ----------  */
     .datos_form {
