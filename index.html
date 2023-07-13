@@ -32,7 +32,7 @@
   <section id="servicios">
     <div class="header_servicios">
       <h4>Servicios</h4>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet, distinctio! Quos illo cum explicabo a odit at alias eveniet, magnam iste? Provident sint debitis error aut doloribus maxime saepe inventore beatae, animi enim, nostrum reprehenderit aliquam officia est aspernatur ratione autem blanditiis recusandae! Aperiam, culpa. Animi consequatur beatae est repellendus temporibus atque nesciunt necessitatibus, at totam cupiditate numquam quasi hic molestias illo debitis assumenda sequi aspernatur! Amet quos ullam sed reiciendis? Officiis eligendi quam tempora molestias inventore repellat, nihil asperiores eaque? Ipsam ratione mollitia labore ducimus officiis inventore, architecto qui, sequi, minus velit nam cum? Quibusdam eos voluptatibus rem veritatis.</p>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet, distinctio! Quos illo cum explicabo a odit at alias eveniet, magnam iste? Provident sint debitis error aut doloribus maxime saepe inventore beatae, animi enim, nostrum reprehenderit aliquam officia est aspernatur ratione autem blanditiis recusandae! Aperiam, culpa. .</p>
     </div>
     <div class="content_servicios_card">
       <div class="card_servicios">
@@ -64,28 +64,53 @@
   <!--------------------------- SECCION QUIENES SOMOS ------------------------------>
   <section id="personas">
     <div>
+      <!-------------- ADIELA ---------------->
       <img src="./imagenes/adiela_400.png" alt="imagen abogada adiela" width="400px" height="400px">
-      <h4>Lorem ipsum dolor sit amet.</h4>
+      <h4>Abg. Adiela Yurany Ceballos Sanchez</h4>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, accusantium?</p>
-      <a href="#" class="boton_saber_mas">Saber mas...</a>
+      <details>
+        <summary>Saber mas..</summary>
+        <ul>
+          <li><i class='bx bx-check'></i> Diplomado Internacional en Derechos Humanos, mencion Experta en el SIDH. - Universidad Juarez Autonoma de tabasco (Mexico)</li>
+          <li><i class='bx bx-check'></i> Especializacion en alta Redaccion y Argumentacion Juridica - Pontificia Universidad Javeriana (Colombbia)</li>
+          <li><i class='bx bx-check'></i> Diplomado Internacional de Derecho Constitucional y Derechos Humanos - Universidad Cesar Vallejo (Peru)</li>
+          <li><i class='bx bx-check'></i> Tercera clasificada de la III Edicion del Concurso Internacional de Estudiantes de la Red Iberoamericana de Facultades y Escuelas de Derecho - Universidad de Leon (España) </li>
+        </ul>
+      </details>
     </div>
     <div>
+      <!-------------- YORDANA ---------------->
       <img src="./imagenes/yordana_400.png" alt="imagen abogada yordana" width="400px" height="400px">
-      <h4>Lorem ipsum dolor sit amet.</h4>
+      <h4>Abg. YORDANA CEDEÑO</h4>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, accusantium?</p>
-      <a href="#" class="boton_saber_mas">Saber mas...</a>
+      <details>
+        <summary>Saber mas..</summary>
+        <ul>
+          <li><i class='bx bx-check'></i> Diplomado Internacional de Derecho de Familia, Niñes y Adolecencia - Universidad Nacional de Mar de la Plata (Argentina)</li>
+          <li><i class='bx bx-check'></i> Curso Internacional de Especializacion en Mediacion Familiar & Procesos de Divorcios - Universidad de Mar de Plata (Argentina)</li>
+          <li><i class='bx bx-check'></i> Formacion Demacratrica y fortalecimiento institucional en el Programa Jevenes Liderando - Corporacion de Participacion Ciudadana (Quito)</li>
+        </ul>
+      </details>
     </div>
     <div>
+      <!-------------- ANTHONY ---------------->
       <img src="./imagenes/amigo_400.png" alt="imagen abogado " width="400px" height="400px">
       <h4>Lorem ipsum dolor sit amet.</h4>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, accusantium?</p>
-      <a href="#" class="boton_saber_mas">Saber mas...</a>
+      <details>
+        <summary>Saber mas..</summary>
+        <ul>
+          <li><i class='bx bx-check'></i> Diplomado Internacional de Derecho Procesal Penal & Politica Criminal - Universidad Nacional de Mar de Plata (Argentina)</li>
+          <li><i class='bx bx-check'></i> Curso Internacional de Especializacion en Delitos de Corrupcion & Crimen Organizado - Universidad de Mar de Plata (Argentina)</li>
+          <li><i class='bx bx-check'></i> Capacitacion en el V Congreso Internacional Derecho Procesal - Universidad San Gregorio de Portoviejo (Ecuador)</li>
+        </ul>
+      </details>
     </div>
   </section>
   <!--------------------------- SECCION FORMULARIO ------------------------------>
   <section id="contacto">
     <h4>Contacta con nosotros</h4>
-    <form action="#" method="get">
+    <form action="https://formsubmit.co/christian198125@hotmail.com" method="post">
       <div class="datos_form">
         <!----- nombre ------>
         <div class="nombre">
@@ -103,9 +128,10 @@
           <label for="mensaje">Mensaje :</label>
           <textarea name="mensaje" id="mensaje" cols="30" rows="10" ></textarea>
         </div>
-        <div class="boton_formulario">
-          <a href="#">Enviar</a>
-        </div>
+          <button type="submit">Enviar</button>
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html#contacto">
     </form>
   </section>
   <!--------------------------- FOOTER ------------------------------>
