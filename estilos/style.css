@@ -270,23 +270,7 @@ form input:focus, form textarea:focus {
     flex-direction: column;
     padding: 10px;
 }
-.boton_formulario {
-    display: block;
-    border: 1px solid rgb(115, 187, 125);
-    color: white;
-    text-align: center;
-    transition: 0.4s;
-    padding: 10px;
-    border-radius: 10px;
-}
-.boton_formulario a {
-    text-decoration: none;
-    color: white;
-}
-.boton_formulario:hover {
-    background-color:rgb(19, 102, 30);
-    border: none;
-}
+
 form button {
     display: block;
     padding: 10px;
