@@ -109,6 +109,13 @@ h3 {
 }
 /* --------------------- SECCION QUIENES SOMOS -------------------------------------  */
 
+#personas h5 {
+    color: var(--secundario);
+    font-size: 2rem;
+    margin: 15px 0px;
+    font-weight: 300;
+}
+
 #personas {
     padding: 50px 50px;
     display: flex;
