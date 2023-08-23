@@ -424,6 +424,10 @@ footer p {
         width: 300px;
         height: 300px;
     }
+    /* ---------- SECCION HOME ----------  */
+    #home {
+        padding: 20px 0px;
+    }
     /* ---------- SECCION SERVICIOS ----------  */
     #servicios {
         padding: 20px 0px;
