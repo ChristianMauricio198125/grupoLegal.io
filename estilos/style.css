@@ -4,6 +4,14 @@
     padding: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+/*  colores variables  */
+:root {
+    --primario: rgb(11, 68, 67);
+    --primario_opacidad:rgba(11,68,67,0.4);
+    --primario_light:rgb(130, 233, 144);
+    --secundario:rgb(177, 157, 107);
+}
+
 
 /* --------------------- HEADER -------------------------------------  */
 
@@ -20,11 +28,11 @@ header {
 }
 .logo {
     text-transform: uppercase;
-    color: rgb(49, 163, 64);
+    color: var(--primario);
     font-weight: 200;
 }
 .logo_palabra-color {
-    color: rgb(216, 146, 42);
+    color: var(--secundario)
 }
 .menu a {
     color: rgb(88, 87, 85);
@@ -42,11 +50,11 @@ header {
 }
 .mostrar_menu {
     order: 1;
-    color: rgb(49, 163, 64);
+    color: var(--primario);
 }
 
 .menu a:hover, .mostrar_menu:hover, .esconder_menu:hover {
-    color: rgb(216, 146, 42);
+    color: var(--secundario);
 }
 #check {
     display: none;
@@ -90,7 +98,8 @@ h3 {
 .boton_empezar {
     text-decoration: none;
     color: white;
-    border: 1px solid rgb(49, 163, 64);
+    background-color: var(--primario_opacidad);
+    border: 1px solid var(--primario);
     padding: 20px 40px;  
     margin-top: 50px;
     transition: all 0.4s;
@@ -111,7 +120,7 @@ h3 {
     border-radius: 100%;
 }
 #personas  div h4 {
-    color: #4d4d5c;
+    color: var(--secundario);
     font-size: 20px;
     margin: 15px 0px;
 }
@@ -124,18 +133,23 @@ details > summary {
     margin-top: 10px;
     width: 200px;
     border-radius: 20px;
-    border: 1px solid rgb(49, 163, 64);
+    border: 1px solid var(--primario);
     box-shadow: 1px 1px 2px #bbbbbb;
     cursor: pointer;
-    color: rgb(49, 163, 64);
+    color: var(--primario);
+  }
+  details > summary:hover {
+    background-color: var(--primario);
+    border: none;
+    color: white;
   }
   details > ul {
     display: block;
     padding: 10px;
-    background-color: rgb(130, 233, 144);
+    background-color: var(--primario);
     margin: 10px;
     border-radius: 5px;
-    color: #4d4d5c;
+    color: rgb(226, 223, 223);
     list-style-type: none;
   }
   details > ul > li {
@@ -144,23 +158,34 @@ details > summary {
     padding-bottom: 10px;
     text-align: justify;
   }
-.boton_saber_mas {
-    display: inline-block;
-    text-decoration: none;
-    color:rgb(49, 163, 64);
-    padding: 10px 30px;
-    border: 1px solid rgb(49, 163, 64);
-    border-radius: 30px;
-    margin-top: 15px;
-    transition: all 0.4s;
-}
-.boton_saber_mas:hover {
-    background-color:rgba(49, 163, 64, 0.4);
-    color: white; 
-    border: none;
-}
+
 #personas div {
     padding: 20px;
+}
+
+/* --------------------- SECCION HOME -------------------------------------  */
+#home {
+    padding: 50px 50px;
+    background-color: #f6f6f8;
+    justify-content: center;
+    align-items: center;
+}
+.header_home {
+    padding: 50px 50px;
+    line-height: 1.5;
+    letter-spacing:2px;
+}
+.header_home h4 {
+    color:var(--secundario);
+    font-size: 30px;
+    margin: 15px 0px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.header_home p {
+    color: #4d4d5c87; 
+    text-align: justify;
 }
 /* --------------------- SECCION SERVICIOS -------------------------------------  */
 #servicios {
@@ -175,7 +200,7 @@ details > summary {
     letter-spacing:2px;
 }
 .header_servicios h4 {
-    color:#4d4d5c;
+    color:var(--secundario);
     font-size: 30px;
     margin: 15px 0px;
     text-align: center;
@@ -197,13 +222,13 @@ details > summary {
     width: 500px;
     height: 300px;
     background-color: white;
-    margin: 50px;
+    margin: 25px 25px;
     border-radius: 10px;
     box-shadow: 10px 10px 10px -8px black;
 }
 .card_servicios h4 {
     height: 20%;
-    background-color:rgb(216, 146, 42);
+    background-color:var(--secundario);
     border-radius: 10px 10px 0px 0px;
     font-size: 25px;
     display: flex;
@@ -215,7 +240,7 @@ details > summary {
 .card_servicios h4 i {
     margin: 20px;
     font-size: 40px;
-    color:rgb(49, 163, 64);
+    color:var(--primario);
 }
 .card_servicios p {
     padding: 20px;
@@ -224,9 +249,22 @@ details > summary {
     line-height: 1.5;
     letter-spacing:2px;
 }
+.card_servicios ul{
+    padding: 1.5rem;
+    list-style: none;
+}
+.card_servicios li{
+    line-height: 2rem;
+    color:#4d4d5c87;
+    letter-spacing:2px;
+}
+.card_servicios li i {
+    color: var(--primario);
+    font-size: 1.5rem;
+}
 /* --------------------- SECCION FORMULARIO -------------------------------------  */
 #contacto {
-    background-color:rgb(49, 163, 64);
+    background-color:var(--primario);
     padding: 50px 0px;
     color: white;
 }
@@ -251,7 +289,7 @@ form label {
     margin-bottom: 10px;
 }
 form input, form textarea {
-    background-color:rgb(49, 163, 64);
+    background-color:var(--primario);
     border-radius: 10px;
     border: 1px solid rgb(115, 187, 125);
     padding: 10px 5px;
@@ -270,12 +308,28 @@ form input:focus, form textarea:focus {
     flex-direction: column;
     padding: 10px;
 }
-
+.boton_formulario {
+    display: block;
+    border: 1px solid rgb(115, 187, 125);
+    color: white;
+    text-align: center;
+    transition: 0.4s;
+    padding: 10px;
+    border-radius: 10px;
+}
+.boton_formulario a {
+    text-decoration: none;
+    color: white;
+}
+.boton_formulario:hover {
+    background-color:rgb(19, 102, 30);
+    border: none;
+}
 form button {
     display: block;
     padding: 10px;
     margin: auto;
-    background-color: rgb(49, 163, 64);
+    background-color: var(--primario);
     border-radius: 10px;
     width: 100%;
     color: white;
@@ -343,7 +397,7 @@ footer p {
         color: white;
     }
     .menu a:hover, .esconder_menu:hover {
-        color:rgb(216, 146, 42);
+        color:var(--secundario);
     }
     .esconder_menu {
         position: absolute;
