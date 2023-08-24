@@ -10,6 +10,7 @@
     --primario_opacidad:rgba(11,68,67,0.4);
     --primario_light:rgb(130, 233, 144);
     --secundario:rgb(177, 157, 107);
+    --color_titulos:rgb(148, 106, 43);
 }
 
 
@@ -108,9 +109,8 @@ h3 {
     background-color: rgba(49, 163, 64, 0.4);
 }
 /* --------------------- SECCION QUIENES SOMOS -------------------------------------  */
-
 #personas h5 {
-    color: var(--secundario);
+    color: var(--color_titulos);
     font-size: 2rem;
     margin: 15px 0px;
     font-weight: 300;
@@ -127,9 +127,10 @@ h3 {
     border-radius: 100%;
 }
 #personas  div h4 {
-    color: var(--secundario);
+    color: var(--color_titulos);
     font-size: 20px;
     margin: 15px 0px;
+    font-weight: 200;
 }
 #personas div p {
     color: #4d4d5c87;
@@ -183,7 +184,7 @@ details > summary {
     letter-spacing:2px;
 }
 .header_home h4 {
-    color:var(--secundario);
+    color:var(--color_titulos);
     font-size: 30px;
     margin: 15px 0px;
     text-align: center;
@@ -207,7 +208,7 @@ details > summary {
     letter-spacing:2px;
 }
 .header_servicios h4 {
-    color:var(--secundario);
+    color:var(--color_titulos);
     font-size: 30px;
     margin: 15px 0px;
     text-align: center;
@@ -235,7 +236,7 @@ details > summary {
 }
 .card_servicios h4 {
     height: 20%;
-    background-color:var(--secundario);
+    background-color:rgb(148, 106, 43);
     border-radius: 10px 10px 0px 0px;
     font-size: 25px;
     display: flex;
@@ -435,6 +436,7 @@ footer p {
     #home {
         padding: 20px 0px;
     }
+    
     /* ---------- SECCION SERVICIOS ----------  */
     #servicios {
         padding: 20px 0px;
@@ -457,6 +459,7 @@ footer p {
         display: block;
     }
 }
+
 
 
 
