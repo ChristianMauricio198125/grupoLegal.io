@@ -114,9 +114,12 @@ h3 {
     font-size: 2rem;
     margin: 15px 0px;
     font-weight: 300;
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
 
-#personas {
+.personas {
     padding: 50px 50px;
     display: flex;
     justify-content: center;
@@ -228,7 +231,7 @@ details > summary {
 }
 .card_servicios {
     width: 500px;
-    height: 300px;
+    height: 320px;
     background-color: white;
     margin: 25px 25px;
     border-radius: 10px;
@@ -459,6 +462,7 @@ footer p {
         display: block;
     }
 }
+
 
 
 
